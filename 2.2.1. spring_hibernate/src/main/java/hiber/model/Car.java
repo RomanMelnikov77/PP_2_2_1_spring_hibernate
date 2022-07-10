@@ -12,8 +12,7 @@ public class Car {
     private String model;
     private int series;
 
-    @OneToOne(mappedBy = "car", cascade = CascadeType.ALL)
-    @JoinColumn(name = "userId")
+    @OneToOne(mappedBy = "car")
     private User user;
 
     public Car() {
